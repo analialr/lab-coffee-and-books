@@ -1,0 +1,27 @@
+<style>
+    #map {
+        width: 100%;
+        height: 400px;
+    }
+
+</style>
+
+
+
+
+<h1>Lista de lugares</h1>
+
+<ul>
+{{#each allPlaces}}
+
+<li>{{name}} 
+    <a href="/places/edit/{{id}}">Editar</a> |
+    <a href="/places/delete/{{id}}">Borrar</a>
+</li>
+{{/each}}
+</ul>
+<a href="/places/new-place">Nuevo lugar</a>
+
+
+<div id="map"></div>
+
